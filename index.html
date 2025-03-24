@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Play Monster Survivors online - An action-packed survival game where you fight endless waves of monsters. Free to play now on hzzero.com!">
-    <title>Monster Survivors | Action Survival Game | Play Online Free</title>
-    <link rel="canonical" href="https://hzzero.com/monster-survivors">
+    <meta name="description" content="Play free online games at hzzero.com - Your ultimate destination for browser games, action games, puzzle games and more!">
+    <title>HZZero Games | Free Online Games to Play Now</title>
+    <link rel="canonical" href="https://hzzero.com">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
         :root {
@@ -14,6 +14,8 @@
             --apple-light-gray: #F2F2F7;
             --apple-green: #34C759;
             --apple-red: #FF3B30;
+            --apple-purple: #AF52DE;
+            --apple-orange: #FF9500;
         }
         
         body {
@@ -22,10 +24,16 @@
             color: #333;
         }
         
-        .game-container {
+        .container-card {
             background-color: white;
             border-radius: 12px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .container-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
         }
         
         .btn-primary {
@@ -39,101 +47,211 @@
             transform: translateY(-2px);
         }
         
-        .game-feature {
-            border-left: 4px solid var(--apple-blue);
+        .category-badge {
+            background-color: rgba(0, 122, 255, 0.1);
+            color: var(--apple-blue);
+            border-radius: 12px;
+            font-size: 0.8rem;
+            padding: 2px 10px;
         }
         
-        @media (max-width: 768px) {
-            .game-iframe {
-                height: 400px;
-            }
+        .hero-section {
+            background: linear-gradient(135deg, #007AFF 0%, #5AC8FA 100%);
+            color: white;
         }
         
-        @media (min-width: 769px) {
-            .game-iframe {
-                height: 600px;
-            }
+        .game-image {
+            border-radius: 12px 12px 0 0;
+            height: 180px;
+            object-fit: cover;
+            width: 100%;
         }
+        
+        .action-badge { background-color: rgba(255, 149, 0, 0.1); color: var(--apple-orange); }
+        .adventure-badge { background-color: rgba(175, 82, 222, 0.1); color: var(--apple-purple); }
+        .puzzle-badge { background-color: rgba(52, 199, 89, 0.1); color: var(--apple-green); }
+        .strategy-badge { background-color: rgba(255, 59, 48, 0.1); color: var(--apple-red); }
     </style>
 </head>
 <body class="min-h-screen">
     <header class="bg-white shadow-md py-4">
         <div class="container mx-auto px-4 flex justify-between items-center">
-            <a href="https://games.hzzero.com" class="text-xl font-bold text-gray-800">hzzero.com</a>
+            <a href="index.html" class="text-xl font-bold text-gray-800">hzzero.com</a>
             <nav>
                 <ul class="flex space-x-6">
-                    <li><a href="https://hzzero.com" class="text-gray-600 hover:text-gray-900">Home</a></li>
-                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Games</a></li>
+                    <li><a href="index.html" class="text-gray-600 hover:text-gray-900">Home</a></li>
+                    <li><a href="#popular-games" class="text-gray-600 hover:text-gray-900">Games</a></li>
+                    <li><a href="#categories" class="text-gray-600 hover:text-gray-900">Categories</a></li>
                     <li><a href="#" class="text-gray-600 hover:text-gray-900">About</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main class="container mx-auto px-4 py-8">
-        <section class="game-container p-6 mb-8">
-            <h1 class="text-3xl md:text-4xl font-bold mb-2 text-center">Monster Survivors</h1>
-            <p class="text-lg text-center mb-6 text-gray-700">Fight endless waves of monsters in this action-packed survival game!</p>
-            
-            <div class="game-iframe w-full mb-8 rounded-lg overflow-hidden shadow-lg">
-                <iframe src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html" 
-                        frameborder="0" 
-                        class="w-full game-iframe" 
-                        allowfullscreen></iframe>
-            </div>
-            
-            <div class="flex justify-center mb-8">
-                <button class="btn-primary px-6 py-3 rounded-full font-bold text-lg">Play Fullscreen</button>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section py-16">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Play Free Online Games</h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Your ultimate destination for the best browser games. Play instantly, no downloads required!</p>
+                <a href="#popular-games" class="inline-block bg-white text-blue-500 font-bold px-6 py-3 rounded-full hover:bg-gray-100 transition duration-300">Explore Games</a>
             </div>
         </section>
 
-        <section class="game-container p-6 mb-8">
-            <h2 class="text-2xl font-bold mb-4 text-gray-800">Game Overview</h2>
-            <p class="mb-4 text-gray-700">
-                Monster Survivors is an intense survival action game where your goal is to stay alive as long as possible against relentless waves of monsters. As you progress, you'll collect power-ups, upgrade your character, and face increasingly challenging enemies.
-            </p>
-            <p class="mb-4 text-gray-700">
-                With its addictive gameplay and progressive difficulty system, Monster Survivors provides hours of engaging entertainment for gamers of all skill levels.
-            </p>
-        </section>
+        <!-- Featured Games -->
+        <section id="popular-games" class="py-12 px-4">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-8 text-center">Popular Games</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                    <!-- Monster Survivors -->
+                    <div class="container-card overflow-hidden">
+                        <img src="https://dummyimage.com/400x225/007aff/ffffff&text=Monster+Survivors" alt="Monster Survivors" class="game-image">
+                        <div class="p-4">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-lg">Monster Survivors</h3>
+                                <span class="category-badge action-badge">Action</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">Fight endless waves of monsters in this action-packed survival game!</p>
+                            <a href="monster-survivors.html" class="btn-primary px-4 py-2 rounded-full font-medium inline-block w-full text-center">Play Now</a>
+                        </div>
+                    </div>
 
-        <section class="game-container p-6 mb-8">
-            <h2 class="text-2xl font-bold mb-4 text-gray-800">How to Play</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="game-feature pl-4 py-2">
-                    <h3 class="font-bold mb-2">Movement</h3>
-                    <p class="text-gray-700">Use WASD or arrow keys to move your character around the arena.</p>
-                </div>
-                <div class="game-feature pl-4 py-2">
-                    <h3 class="font-bold mb-2">Combat</h3>
-                    <p class="text-gray-700">Your character attacks automatically. Position yourself strategically to maximize damage.</p>
-                </div>
-                <div class="game-feature pl-4 py-2">
-                    <h3 class="font-bold mb-2">Power-ups</h3>
-                    <p class="text-gray-700">Collect gems from defeated enemies to level up and choose new abilities.</p>
-                </div>
-                <div class="game-feature pl-4 py-2">
-                    <h3 class="font-bold mb-2">Survival</h3>
-                    <p class="text-gray-700">Stay alive as long as possible and aim for a high score on the leaderboard.</p>
+                    <!-- Puzzle Quest -->
+                    <div class="container-card overflow-hidden">
+                        <img src="https://dummyimage.com/400x225/34c759/ffffff&text=Puzzle+Quest" alt="Puzzle Quest" class="game-image">
+                        <div class="p-4">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-lg">Puzzle Quest</h3>
+                                <span class="category-badge puzzle-badge">Puzzle</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">Challenge your brain with hundreds of unique puzzle levels!</p>
+                            <a href="puzzle-quest.html" class="btn-primary px-4 py-2 rounded-full font-medium inline-block w-full text-center">Play Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Zombie Apocalypse -->
+                    <div class="container-card overflow-hidden">
+                        <img src="https://dummyimage.com/400x225/ff3b30/ffffff&text=Zombie+Apocalypse" alt="Zombie Apocalypse" class="game-image">
+                        <div class="p-4">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-lg">Zombie Apocalypse</h3>
+                                <span class="category-badge action-badge">Action</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">Survive the zombie hordes and find a way to escape the city!</p>
+                            <a href="#" class="btn-primary px-4 py-2 rounded-full font-medium inline-block w-full text-center">Play Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Kingdom Strategy -->
+                    <div class="container-card overflow-hidden">
+                        <img src="https://dummyimage.com/400x225/8e8e93/ffffff&text=Kingdom+Strategy" alt="Kingdom Strategy" class="game-image">
+                        <div class="p-4">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-lg">Kingdom Strategy</h3>
+                                <span class="category-badge strategy-badge">Strategy</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">Build your empire, train your army, and conquer neighboring kingdoms!</p>
+                            <a href="#" class="btn-primary px-4 py-2 rounded-full font-medium inline-block w-full text-center">Play Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Space Explorer -->
+                    <div class="container-card overflow-hidden">
+                        <img src="https://dummyimage.com/400x225/af52de/ffffff&text=Space+Explorer" alt="Space Explorer" class="game-image">
+                        <div class="p-4">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-lg">Space Explorer</h3>
+                                <span class="category-badge adventure-badge">Adventure</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">Explore vast galaxies and discover new planets in this space adventure!</p>
+                            <a href="space-explorer.html" class="btn-primary px-4 py-2 rounded-full font-medium inline-block w-full text-center">Play Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Car Racing Pro -->
+                    <div class="container-card overflow-hidden">
+                        <img src="https://dummyimage.com/400x225/ff9500/ffffff&text=Car+Racing+Pro" alt="Car Racing Pro" class="game-image">
+                        <div class="p-4">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-lg">Car Racing Pro</h3>
+                                <span class="category-badge action-badge">Racing</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">Race against time and opponents on thrilling tracks around the world!</p>
+                            <a href="#" class="btn-primary px-4 py-2 rounded-full font-medium inline-block w-full text-center">Play Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Treasure Hunt -->
+                    <div class="container-card overflow-hidden">
+                        <img src="https://dummyimage.com/400x225/c79800/ffffff&text=Treasure+Hunt" alt="Treasure Hunt" class="game-image">
+                        <div class="p-4">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-lg">Treasure Hunt</h3>
+                                <span class="category-badge adventure-badge">Adventure</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">Embark on an epic adventure to find hidden treasures and ancient artifacts!</p>
+                            <a href="#" class="btn-primary px-4 py-2 rounded-full font-medium inline-block w-full text-center">Play Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Bubble Shooter -->
+                    <div class="container-card overflow-hidden">
+                        <img src="https://dummyimage.com/400x225/00c7b5/ffffff&text=Bubble+Shooter" alt="Bubble Shooter" class="game-image">
+                        <div class="p-4">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-lg">Bubble Shooter</h3>
+                                <span class="category-badge puzzle-badge">Puzzle</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">Pop colorful bubbles and clear the board in this addictive puzzle game!</p>
+                            <a href="#" class="btn-primary px-4 py-2 rounded-full font-medium inline-block w-full text-center">Play Now</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="game-container p-6">
-            <h2 class="text-2xl font-bold mb-4 text-gray-800">Game Features</h2>
-            <ul class="list-disc pl-6 mb-4">
-                <li class="mb-2 text-gray-700">Exciting survival gameplay with endless waves of monsters</li>
-                <li class="mb-2 text-gray-700">Multiple character abilities and power-ups to unlock</li>
-                <li class="mb-2 text-gray-700">Progressive difficulty system that keeps the challenge fresh</li>
-                <li class="mb-2 text-gray-700">Vibrant graphics and immersive sound effects</li>
-                <li class="mb-2 text-gray-700">Optimized for both desktop and mobile play</li>
-            </ul>
-            
-            <div class="bg-blue-50 p-4 rounded-lg mt-6">
-                <h2 class="text-xl font-bold mb-2 text-gray-800">Tips for Success</h2>
-                <p class="text-gray-700">
-                    Always keep moving to avoid being surrounded. Prioritize defensive upgrades early on, and focus on creating a balanced build as you progress. Don't forget to collect experience gems quickly before they disappear!
-                </p>
+        <!-- Categories Section -->
+        <section id="categories" class="py-12 px-4 bg-white">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-8 text-center">Game Categories</h2>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <a href="#" class="bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg p-6 text-white text-center hover:from-blue-600 hover:to-blue-700 transition duration-300">
+                        <h3 class="font-bold text-xl mb-2">Action</h3>
+                        <p class="text-blue-100">12 Games</p>
+                    </a>
+                    
+                    <a href="#" class="bg-gradient-to-r from-purple-500 to-purple-600 rounded-lg p-6 text-white text-center hover:from-purple-600 hover:to-purple-700 transition duration-300">
+                        <h3 class="font-bold text-xl mb-2">Adventure</h3>
+                        <p class="text-purple-100">8 Games</p>
+                    </a>
+                    
+                    <a href="#" class="bg-gradient-to-r from-green-500 to-green-600 rounded-lg p-6 text-white text-center hover:from-green-600 hover:to-green-700 transition duration-300">
+                        <h3 class="font-bold text-xl mb-2">Puzzle</h3>
+                        <p class="text-green-100">15 Games</p>
+                    </a>
+                    
+                    <a href="#" class="bg-gradient-to-r from-red-500 to-red-600 rounded-lg p-6 text-white text-center hover:from-red-600 hover:to-red-700 transition duration-300">
+                        <h3 class="font-bold text-xl mb-2">Strategy</h3>
+                        <p class="text-red-100">6 Games</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="py-12 px-4">
+            <div class="container mx-auto max-w-4xl bg-white rounded-lg shadow-md p-8">
+                <div class="text-center">
+                    <h2 class="text-2xl font-bold mb-2">Stay Updated</h2>
+                    <p class="text-gray-600 mb-6">Subscribe to our newsletter to get updates on new games and special features!</p>
+                    
+                    <form class="flex flex-col md:flex-row gap-4 justify-center">
+                        <input type="email" placeholder="Your email address" class="px-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 md:min-w-[300px]">
+                        <button type="submit" class="btn-primary px-6 py-2 rounded-full font-medium">Subscribe</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
@@ -145,13 +263,32 @@
                     <h2 class="text-xl font-bold mb-4">hzzero.com</h2>
                     <p class="text-gray-400">Your destination for free online games</p>
                 </div>
-                <div>
-                    <h3 class="font-bold mb-2">Quick Links</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Terms of Service</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Contact Us</a></li>
-                    </ul>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h3 class="font-bold mb-2">Games</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white">Action Games</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Adventure Games</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Puzzle Games</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Strategy Games</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-2">About</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Developers</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-2">Legal</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Cookie Policy</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
@@ -159,20 +296,5 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        document.querySelector('.btn-primary').addEventListener('click', function() {
-            const iframe = document.querySelector('iframe');
-            if (iframe.requestFullscreen) {
-                iframe.requestFullscreen();
-            } else if (iframe.mozRequestFullScreen) {
-                iframe.mozRequestFullScreen();
-            } else if (iframe.webkitRequestFullscreen) {
-                iframe.webkitRequestFullscreen();
-            } else if (iframe.msRequestFullscreen) {
-                iframe.msRequestFullscreen();
-            }
-        });
-    </script>
 </body>
 </html> 

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play Space Explorer online - Explore vast galaxies and discover new planets in this space adventure! Free to play now on hzzero.com!">
+    <title>Space Explorer | Space Adventure Game | Play Online Free</title>
+    <link rel="canonical" href="https://hzzero.com/space-explorer">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --apple-blue: #007AFF;
+            --apple-gray: #8E8E93;
+            --apple-light-gray: #F2F2F7;
+            --apple-purple: #AF52DE;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--apple-light-gray);
+            color: #333;
+        }
+        
+        .game-container {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-primary {
+            background-color: var(--apple-purple);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #9541c9;
+            transform: translateY(-2px);
+        }
+        
+        .game-feature {
+            border-left: 4px solid var(--apple-purple);
+        }
+        
+        @media (max-width: 768px) {
+            .game-iframe {
+                height: 400px;
+            }
+        }
+        
+        @media (min-width: 769px) {
+            .game-iframe {
+                height: 600px;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-gray-800">hzzero.com</a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="text-gray-600 hover:text-gray-900">Home</a></li>
+                    <li><a href="index.html#popular-games" class="text-gray-600 hover:text-gray-900">Games</a></li>
+                    <li><a href="index.html#categories" class="text-gray-600 hover:text-gray-900">Categories</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section class="game-container p-6 mb-8">
+            <h1 class="text-3xl md:text-4xl font-bold mb-2 text-center">Space Explorer</h1>
+            <p class="text-lg text-center mb-6 text-gray-700">Explore vast galaxies and discover new planets in this space adventure!</p>
+            
+            <div class="game-iframe w-full mb-8 rounded-lg overflow-hidden shadow-lg">
+                <!-- Game Distribution iframe -->
+                <iframe src="https://html5.gamedistribution.com" 
+                        frameborder="0" 
+                        class="w-full game-iframe" 
+                        allowfullscreen></iframe>
+            </div>
+            
+            <div class="flex justify-center mb-8">
+                <button class="btn-primary px-6 py-3 rounded-full font-bold text-lg">Play Fullscreen</button>
+            </div>
+        </section>
+
+        <section class="game-container p-6 mb-8">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800">Game Overview</h2>
+            <p class="mb-4 text-gray-700">
+                Space Explorer is an exciting space adventure game where you navigate through the vast cosmos, discover new planets and engage in epic space battles. Command your spaceship through asteroid fields, nebulae, and past black holes as you explore the furthest reaches of the galaxy.
+            </p>
+            <p class="mb-4 text-gray-700">
+                With stunning visuals and immersive gameplay, Space Explorer offers an unforgettable journey through space that will challenge your piloting skills and strategic thinking.
+            </p>
+        </section>
+
+        <section class="game-container p-6 mb-8">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800">How to Play</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="game-feature pl-4 py-2">
+                    <h3 class="font-bold mb-2">Controls</h3>
+                    <p class="text-gray-700">Use WASD or arrow keys to navigate your spaceship through the galaxy. Space bar to fire weapons.</p>
+                </div>
+                <div class="game-feature pl-4 py-2">
+                    <h3 class="font-bold mb-2">Exploration</h3>
+                    <p class="text-gray-700">Discover new planets and collect resources to upgrade your ship and equipment.</p>
+                </div>
+                <div class="game-feature pl-4 py-2">
+                    <h3 class="font-bold mb-2">Combat</h3>
+                    <p class="text-gray-700">Engage enemy ships in tactical space battles. Use special abilities to gain the upper hand.</p>
+                </div>
+                <div class="game-feature pl-4 py-2">
+                    <h3 class="font-bold mb-2">Missions</h3>
+                    <p class="text-gray-700">Complete various missions to earn rewards and unlock new areas of the galaxy.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="game-container p-6">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800">Game Features</h2>
+            <ul class="list-disc pl-6 mb-4">
+                <li class="mb-2 text-gray-700">Vast procedurally-generated galaxy to explore</li>
+                <li class="mb-2 text-gray-700">Multiple spaceships with unique abilities to unlock</li>
+                <li class="mb-2 text-gray-700">Engaging space combat with various weapons and defense systems</li>
+                <li class="mb-2 text-gray-700">Beautiful cosmic visuals and immersive sound effects</li>
+                <li class="mb-2 text-gray-700">Progressive difficulty system that adapts to your skill level</li>
+            </ul>
+            
+            <div class="bg-purple-50 p-4 rounded-lg mt-6">
+                <h2 class="text-xl font-bold mb-2 text-gray-800">Tips for Success</h2>
+                <p class="text-gray-700">
+                    Always keep an eye on your fuel and shield levels. Prioritize upgrading your ship's navigation systems early on for more efficient travel. When in combat, try to maintain distance from enemy ships while focusing fire on their weapons systems first.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-xl font-bold mb-4">hzzero.com</h2>
+                    <p class="text-gray-400">Your destination for free online games</p>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-2">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
+                <p>&copy; 2023 hzzero.com. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.btn-primary').addEventListener('click', function() {
+            const iframe = document.querySelector('iframe');
+            if (iframe.requestFullscreen) {
+                iframe.requestFullscreen();
+            } else if (iframe.mozRequestFullScreen) {
+                iframe.mozRequestFullScreen();
+            } else if (iframe.webkitRequestFullscreen) {
+                iframe.webkitRequestFullscreen();
+            } else if (iframe.msRequestFullscreen) {
+                iframe.msRequestFullscreen();
+            }
+        });
+    </script>
+</body>
+</html> 
