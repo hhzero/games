@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Play the best free online games at hzzero.com - Monster Survivors, Ragdoll Archers, WorldGuessr and more! No downloads, play directly in your browser.">
+    <meta name="description" content="Play the best free online games at hzzero.com - Monster Survivors, Ragdoll Archers, WorldGuessr, Stone Grass Mowing Simulator, Mahjongg Solitaire, Twisted Tangle and more! No downloads, play directly in your browser.">
     <title>hzzero.com | Free Online Games | Play Now</title>
     <link rel="canonical" href="https://hzzero.com">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -77,6 +77,17 @@
                 height: 600px;
             }
         }
+        
+        .ad-space {
+            min-height: 250px;
+            background-color: #f0f0f0;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #999;
+            font-size: 1.2rem;
+        }
     </style>
 </head>
 <body class="min-h-screen">
@@ -101,40 +112,91 @@
 
         <section id="games" class="mb-12">
             <h2 class="text-3xl font-bold mb-8 text-center">Featured Games</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Monster Survivors -->
-                <div class="game-container overflow-hidden">
-                    <img src="images/monster-survivors.png" alt="Monster Survivors" class="game-card-img w-full">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Monster Survivors</h3>
-                        <p class="text-gray-700 mb-4">Fight endless waves of monsters in this action-packed survival game!</p>
-                        <a href="game/monster-survivors.html" class="btn-primary inline-block px-6 py-2 rounded-full font-bold">Play Now</a>
+            
+            <div class="flex flex-wrap">
+                <!-- Left Ad Space -->
+                <div class="hidden lg:block lg:w-1/6">
+                    <div class="ad-space sticky top-4">
+                        <!-- Ad Space -->
                     </div>
                 </div>
                 
-                <!-- Ragdoll Archers -->
-                <div class="game-container overflow-hidden">
-                    <img src="images/ragdoll-archers.jpg" alt="Ragdoll Archers" class="game-card-img w-full">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Ragdoll Archers</h3>
-                        <p class="text-gray-700 mb-4">Test your archery skills in this physics-based ragdoll archery game!</p>
-                        <a href="game/ragdoll-archers.html" class="btn-primary inline-block px-6 py-2 rounded-full font-bold">Play Now</a>
+                <!-- Games Grid -->
+                <div class="w-full lg:w-4/6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                        <!-- Ragdoll Archers -->
+                        <div class="game-container overflow-hidden">
+                            <img src="images/ragdoll-archers.jpg" alt="Ragdoll Archers" class="game-card-img w-full">
+                            <div class="p-4">
+                                <h3 class="text-lg font-bold mb-2">Ragdoll Archers</h3>
+                                <p class="text-gray-700 mb-3 text-sm">Test your archery skills in this physics-based ragdoll archery game!</p>
+                                <a href="game/ragdoll-archers.html" class="btn-primary inline-block px-4 py-2 rounded-full font-bold text-sm">Play Now</a>
+                            </div>
+                        </div>
+
+                        <!-- Monster Survivors -->
+                        <div class="game-container overflow-hidden">
+                            <img src="images/monster-survivors.png" alt="Monster Survivors" class="game-card-img w-full">
+                            <div class="p-4">
+                                <h3 class="text-lg font-bold mb-2">Monster Survivors</h3>
+                                <p class="text-gray-700 mb-3 text-sm">Fight endless waves of monsters in this action-packed survival game!</p>
+                                <a href="game/monster-survivors.html" class="btn-primary inline-block px-4 py-2 rounded-full font-bold text-sm">Play Now</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Twisted Tangle -->
+                        <div class="game-container overflow-hidden">
+                            <img src="images/twisted-tangle.png" alt="Twisted Tangle" class="game-card-img w-full">
+                            <div class="p-4">
+                                <h3 class="text-lg font-bold mb-2">Twisted Tangle</h3>
+                                <p class="text-gray-700 mb-3 text-sm">Untangle complex knots and challenge your logical thinking skills!</p>
+                                <a href="game/twisted-tangle-nmt.html" class="btn-primary inline-block px-4 py-2 rounded-full font-bold text-sm">Play Now</a>
+                            </div>
+                        </div>
+
+                        <!-- WorldGuessr -->
+                        <div class="game-container overflow-hidden">
+                            <img src="images/worldguessr.png" alt="WorldGuessr" class="game-card-img w-full">
+                            <div class="p-4">
+                                <h3 class="text-lg font-bold mb-2">WorldGuessr</h3>
+                                <p class="text-gray-700 mb-3 text-sm">Test your geography knowledge by guessing locations around the world!</p>
+                                <a href="game/worldguessr.html" class="btn-primary inline-block px-4 py-2 rounded-full font-bold text-sm">Play Now</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Stone Grass Mowing Simulator -->
+                        <div class="game-container overflow-hidden">
+                            <img src="images/stone-grass-mowing-simulator.png" alt="Stone Grass Mowing Simulator" class="game-card-img w-full">
+                            <div class="p-4">
+                                <h3 class="text-lg font-bold mb-2">Stone Grass Mowing</h3>
+                                <p class="text-gray-700 mb-3 text-sm">Experience the satisfaction of transforming wild fields into perfectly manicured lawns!</p>
+                                <a href="game/stone-grass-mowing-simulator.html" class="btn-primary inline-block px-4 py-2 rounded-full font-bold text-sm">Play Now</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Mahjongg Solitaire -->
+                        <div class="game-container overflow-hidden">
+                            <img src="images/mahjongg-solitaire.png" alt="Mahjongg Solitaire" class="game-card-img w-full">
+                            <div class="p-4">
+                                <h3 class="text-lg font-bold mb-2">Mahjongg Solitaire</h3>
+                                <p class="text-gray-700 mb-3 text-sm">Test your matching skills in this classic tile-matching puzzle game!</p>
+                                <a href="game/mahjongg-solitaire.html" class="btn-primary inline-block px-4 py-2 rounded-full font-bold text-sm">Play Now</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
-                <!-- WorldGuessr -->
-                <div class="game-container overflow-hidden">
-                    <img src="images/worldguessr.png" alt="WorldGuessr" class="game-card-img w-full">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">WorldGuessr</h3>
-                        <p class="text-gray-700 mb-4">Test your geography knowledge by guessing locations around the world!</p>
-                        <a href="game/worldguessr.html" class="btn-primary inline-block px-6 py-2 rounded-full font-bold">Play Now</a>
+                <!-- Right Ad Space -->
+                <div class="hidden lg:block lg:w-1/6">
+                    <div class="ad-space sticky top-4">
+                        <!-- Ad Space -->
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="game-container p-8 mb-12">
+        <section id="about" class="game-container p-8 mb-12 max-w-4xl mx-auto">
             <h2 class="text-3xl font-bold mb-4 text-center">About hzzero.com</h2>
             <p class="text-gray-700 mb-4">
                 Welcome to hzzero.com, your destination for free online games! We offer a diverse collection of high-quality browser games that you can play instantly without downloads or installations.
