@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Play Monster Survivors online - An action-packed survival game where you fight endless waves of monsters. Free to play now on hzzero.com!">
-    <title>Monster Survivors | Action Survival Game | Play Online Free</title>
-    <link rel="canonical" href="https://hzzero.com/monster-survivors">
+    <meta name="description" content="Play the best free online games at hzzero.com - Monster Survivors, Ragdoll Archers, WorldGuessr and more! No downloads, play directly in your browser.">
+    <title>hzzero.com | Free Online Games | Play Now</title>
+    <link rel="canonical" href="https://hzzero.com">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
     <!-- Google tag (gtag.js) -->
@@ -37,6 +37,11 @@
             background-color: white;
             border-radius: 12px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .game-container:hover {
+            transform: translateY(-5px);
         }
         
         .btn-primary {
@@ -52,6 +57,13 @@
         
         .game-feature {
             border-left: 4px solid var(--apple-blue);
+        }
+        
+        .game-card-img {
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
         }
         
         @media (max-width: 768px) {
@@ -70,82 +82,66 @@
 <body class="min-h-screen">
     <header class="bg-white shadow-md py-4">
         <div class="container mx-auto px-4 flex justify-between items-center">
-            <a href="https://games.hzzero.com" class="text-xl font-bold text-gray-800">hzzero.com</a>
+            <a href="https://hzzero.com" class="text-xl font-bold text-gray-800">hzzero.com</a>
             <nav>
                 <ul class="flex space-x-6">
                     <li><a href="https://hzzero.com" class="text-gray-600 hover:text-gray-900">Home</a></li>
-                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Games</a></li>
-                    <li><a href="#" class="text-gray-600 hover:text-gray-900">About</a></li>
+                    <li><a href="#games" class="text-gray-600 hover:text-gray-900">Games</a></li>
+                    <li><a href="#about" class="text-gray-600 hover:text-gray-900">About</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main class="container mx-auto px-4 py-8">
-        <section class="game-container p-6 mb-8">
-            <h1 class="text-3xl md:text-4xl font-bold mb-2 text-center">Monster Survivors</h1>
-            <p class="text-lg text-center mb-6 text-gray-700">Fight endless waves of monsters in this action-packed survival game!</p>
-            
-            <div class="game-iframe w-full mb-8 rounded-lg overflow-hidden shadow-lg">
-                <iframe src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html" 
-                        frameborder="0" 
-                        class="w-full game-iframe" 
-                        allowfullscreen></iframe>
-            </div>
-            
-            <div class="flex justify-center mb-8">
-                <button class="btn-primary px-6 py-3 rounded-full font-bold text-lg">Play Fullscreen</button>
+        <section class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Play Free Games Online</h1>
+            <p class="text-lg text-gray-700 max-w-3xl mx-auto">Enjoy our collection of free online games. No downloads required - play directly in your browser!</p>
+        </section>
+
+        <section id="games" class="mb-12">
+            <h2 class="text-3xl font-bold mb-8 text-center">Featured Games</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Monster Survivors -->
+                <div class="game-container overflow-hidden">
+                    <img src="images/monster-survivors.jpg" alt="Monster Survivors" class="game-card-img w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Monster Survivors</h3>
+                        <p class="text-gray-700 mb-4">Fight endless waves of monsters in this action-packed survival game!</p>
+                        <a href="games/monster-survivors.html" class="btn-primary inline-block px-6 py-2 rounded-full font-bold">Play Now</a>
+                    </div>
+                </div>
+                
+                <!-- Ragdoll Archers -->
+                <div class="game-container overflow-hidden">
+                    <img src="images/ragdoll-archers.jpg" alt="Ragdoll Archers" class="game-card-img w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Ragdoll Archers</h3>
+                        <p class="text-gray-700 mb-4">Test your archery skills in this physics-based ragdoll archery game!</p>
+                        <a href="games/ragdoll-archers.html" class="btn-primary inline-block px-6 py-2 rounded-full font-bold">Play Now</a>
+                    </div>
+                </div>
+                
+                <!-- WorldGuessr -->
+                <div class="game-container overflow-hidden">
+                    <img src="images/worldguessr.png" alt="WorldGuessr" class="game-card-img w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">WorldGuessr</h3>
+                        <p class="text-gray-700 mb-4">Test your geography knowledge by guessing locations around the world!</p>
+                        <a href="games/worldguessr.html" class="btn-primary inline-block px-6 py-2 rounded-full font-bold">Play Now</a>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="game-container p-6 mb-8">
-            <h2 class="text-2xl font-bold mb-4 text-gray-800">Game Overview</h2>
-            <p class="mb-4 text-gray-700">
-                Monster Survivors is an intense survival action game where your goal is to stay alive as long as possible against relentless waves of monsters. As you progress, you'll collect power-ups, upgrade your character, and face increasingly challenging enemies.
+        <section id="about" class="game-container p-8 mb-12">
+            <h2 class="text-3xl font-bold mb-4 text-center">About hzzero.com</h2>
+            <p class="text-gray-700 mb-4">
+                Welcome to hzzero.com, your destination for free online games! We offer a diverse collection of high-quality browser games that you can play instantly without downloads or installations.
             </p>
-            <p class="mb-4 text-gray-700">
-                With its addictive gameplay and progressive difficulty system, Monster Survivors provides hours of engaging entertainment for gamers of all skill levels.
+            <p class="text-gray-700">
+                Our games are carefully selected to provide you with the best gaming experience right in your browser. From action-packed adventures to brain-teasing puzzles, we have something for everyone. Enjoy your time on hzzero.com and check back regularly for new games!
             </p>
-        </section>
-
-        <section class="game-container p-6 mb-8">
-            <h2 class="text-2xl font-bold mb-4 text-gray-800">How to Play</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="game-feature pl-4 py-2">
-                    <h3 class="font-bold mb-2">Movement</h3>
-                    <p class="text-gray-700">Use WASD or arrow keys to move your character around the arena.</p>
-                </div>
-                <div class="game-feature pl-4 py-2">
-                    <h3 class="font-bold mb-2">Combat</h3>
-                    <p class="text-gray-700">Your character attacks automatically. Position yourself strategically to maximize damage.</p>
-                </div>
-                <div class="game-feature pl-4 py-2">
-                    <h3 class="font-bold mb-2">Power-ups</h3>
-                    <p class="text-gray-700">Collect gems from defeated enemies to level up and choose new abilities.</p>
-                </div>
-                <div class="game-feature pl-4 py-2">
-                    <h3 class="font-bold mb-2">Survival</h3>
-                    <p class="text-gray-700">Stay alive as long as possible and aim for a high score on the leaderboard.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="game-container p-6">
-            <h2 class="text-2xl font-bold mb-4 text-gray-800">Game Features</h2>
-            <ul class="list-disc pl-6 mb-4">
-                <li class="mb-2 text-gray-700">Exciting survival gameplay with endless waves of monsters</li>
-                <li class="mb-2 text-gray-700">Multiple character abilities and power-ups to unlock</li>
-                <li class="mb-2 text-gray-700">Progressive difficulty system that keeps the challenge fresh</li>
-                <li class="mb-2 text-gray-700">Vibrant graphics and immersive sound effects</li>
-                <li class="mb-2 text-gray-700">Optimized for both desktop and mobile play</li>
-            </ul>
-            
-            <div class="bg-blue-50 p-4 rounded-lg mt-6">
-                <h2 class="text-xl font-bold mb-2 text-gray-800">Tips for Success</h2>
-                <p class="text-gray-700">
-                    Always keep moving to avoid being surrounded. Prioritize defensive upgrades early on, and focus on creating a balanced build as you progress. Don't forget to collect experience gems quickly before they disappear!
-                </p>
-            </div>
         </section>
     </main>
 
@@ -170,20 +166,5 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        document.querySelector('.btn-primary').addEventListener('click', function() {
-            const iframe = document.querySelector('iframe');
-            if (iframe.requestFullscreen) {
-                iframe.requestFullscreen();
-            } else if (iframe.mozRequestFullScreen) {
-                iframe.mozRequestFullScreen();
-            } else if (iframe.webkitRequestFullscreen) {
-                iframe.webkitRequestFullscreen();
-            } else if (iframe.msRequestFullscreen) {
-                iframe.msRequestFullscreen();
-            }
-        });
-    </script>
 </body>
 </html> 
