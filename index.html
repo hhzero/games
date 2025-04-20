@@ -88,12 +88,29 @@
             color: #999;
             font-size: 1.2rem;
         }
+
+        .logo-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .logo-icon:hover {
+            transform: rotate(15deg);
+        }
     </style>
 </head>
 <body class="min-h-screen">
     <header class="bg-white shadow-md py-4">
         <div class="container mx-auto px-4 flex justify-between items-center">
-            <a href="https://hzzero.com" class="text-xl font-bold text-gray-800">hzzero.com</a>
+            <a href="https://hzzero.com" class="text-xl font-bold text-gray-800 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#007AFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
+                  <path d="M12 2L15 6H9L12 2Z" />
+                  <path d="M6 9V15L2 12L6 9Z" />
+                  <path d="M18 9L22 12L18 15V9Z" />
+                  <path d="M12 22L9 18H15L12 22Z" />
+                  <rect x="8" y="8" width="8" height="8" />
+                </svg>
+                hzzero.com
+            </a>
             <nav>
                 <ul class="flex space-x-6">
                     <li><a href="https://hzzero.com" class="text-gray-600 hover:text-gray-900">Home</a></li>
