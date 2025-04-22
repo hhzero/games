@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play Mahjongg Solitaire online - A classic tile-matching puzzle game where you match and remove identical mahjong tiles! Free to play now on hzzero.com!">
+    <title>Mahjongg Solitaire | Tile Matching Game | Play Online Free</title>
+    <link rel="canonical" href="https://hzzero.com/mahjongg-solitaire">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DCTSCEHYCW"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DCTSCEHYCW');
+    </script>
+
+    <style>
+        :root {
+            --apple-blue: #007AFF;
+            --apple-gray: #8E8E93;
+            --apple-light-gray: #F2F2F7;
+            --apple-green: #34C759;
+            --apple-red: #FF3B30;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--apple-light-gray);
+            color: #333;
+        }
+        
+        .game-container {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-primary {
+            background-color: var(--apple-blue);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #005ecb;
+            transform: translateY(-2px);
+        }
+        
+        .game-feature {
+            border-left: 4px solid var(--apple-blue);
+        }
+        
+        @media (max-width: 768px) {
+            .game-iframe {
+                height: 400px;
+            }
+        }
+        
+        @media (min-width: 769px) {
+            .game-iframe {
+                height: 600px;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="https://games.hzzero.com" class="text-xl font-bold text-gray-800">hzzero.com</a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="https://hzzero.com" class="text-gray-600 hover:text-gray-900">Home</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Games</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section class="game-container p-6 mb-8">
+            <h1 class="text-3xl md:text-4xl font-bold mb-2 text-center">Mahjongg Solitaire</h1>
+            <p class="text-lg text-center mb-6 text-gray-700">Find matching pairs in this addictive tile-clearing classic!</p>
+            
+            <div class="game-iframe w-full mb-8 rounded-lg overflow-hidden shadow-lg">
+                <iframe src="https://www.crazygames.com/embed/mahjongg-solitaire" 
+                        frameborder="0" 
+                        class="w-full game-iframe" 
+                        allow="gamepad *;"
+                        allowfullscreen></iframe>
+            </div>
+            
+            <div class="flex justify-center mb-8">
+                <button class="btn-primary px-6 py-3 rounded-full font-bold text-lg">Fullscreen</button>
+            </div>
+        </section>
+
+        <section class="game-container p-6 mb-8">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800">Game Overview</h2>
+            <p class="mb-4 text-gray-700">
+                Mahjongg Solitaire puts a puzzle spin on the ancient Chinese game of Mahjong. The goal couldn't be simpler: pair up identical tiles to clear them from the board until you've removed every last one. This digital version brings all the classic satisfaction with eye-catching visuals and smooth gameplay.
+            </p>
+            <p class="mb-4 text-gray-700">
+                With dozens of intricate layouts to tackle and various difficulty settings, Mahjongg Solitaire offers endless brain-teasing fun. The zen-like pace and satisfying click of matching tiles make it perfect for quick gaming breaks or longer sessions of puzzle-solving bliss.
+            </p>
+        </section>
+
+        <section class="game-container p-6 mb-8">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800">How to Play</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="game-feature pl-4 py-2">
+                    <h3 class="font-bold mb-2">Spot & Match</h3>
+                    <p class="text-gray-700">Click on matching pairs of free tiles to remove them from the board. You can only select tiles that aren't blocked on both sides by other tiles.</p>
+                </div>
+                <div class="game-feature pl-4 py-2">
+                    <h3 class="font-bold mb-2">Find "Free" Tiles</h3>
+                    <p class="text-gray-700">A tile is "free" when its left or right edge isn't touching another tile. You'll need to clear top-layer tiles before accessing those underneath.</p>
+                </div>
+                <div class="game-feature pl-4 py-2">
+                    <h3 class="font-bold mb-2">Think Ahead</h3>
+                    <p class="text-gray-700">Don't just click the first matches you see! Sometimes it's smarter to leave certain pairs for later to unblock crucial tiles underneath.</p>
+                </div>
+                <div class="game-feature pl-4 py-2">
+                    <h3 class="font-bold mb-2">Beat the Clock</h3>
+                    <p class="text-gray-700">Some levels feature timers. Work efficiently to match all tiles before time runs out to earn bonus points and special rewards.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="game-container p-6">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800">Game Features</h2>
+            <ul class="list-disc pl-6 mb-4">
+                <li class="mb-2 text-gray-700">Dozens of stunning layout designs to keep things fresh</li>
+                <li class="mb-2 text-gray-700">Traditional Mahjong tiles with crisp, vibrant artwork</li>
+                <li class="mb-2 text-gray-700">Smart hint system for when you get stuck</li>
+                <li class="mb-2 text-gray-700">Shuffle option if no more matches are available</li>
+                <li class="mb-2 text-gray-700">Soothing soundtrack to enhance your puzzle-solving mood</li>
+                <li class="mb-2 text-gray-700">Difficulty options for both newcomers and Mahjong masters</li>
+                <li class="mb-2 text-gray-700">Performance tracking to challenge your personal bests</li>
+            </ul>
+            
+            <div class="bg-blue-50 p-4 rounded-lg mt-6">
+                <h2 class="text-xl font-bold mb-2 text-gray-800">Pro Tips</h2>
+                <p class="text-gray-700">
+                    Always work from the top down – clear the highest tiles first to access those buried underneath. Focus on removing tiles that are blocking the most other pieces. Train your eyes to spot matching pairs across the entire board – it's easy to miss matches that are far apart. If you're stuck, use a hint, but try not to rely on them too much (that's where the real satisfaction comes from!). Most importantly, be patient and think a few moves ahead – sometimes it's better to ignore an obvious pair if removing it would leave you with no future options.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-xl font-bold mb-4">hzzero.com</h2>
+                    <p class="text-gray-400">Your go-to spot for free online games</p>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-2">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
+                <p>&copy; 2023 hzzero.com. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.btn-primary').addEventListener('click', function() {
+            const iframe = document.querySelector('iframe');
+            if (iframe.requestFullscreen) {
+                iframe.requestFullscreen();
+            } else if (iframe.mozRequestFullScreen) {
+                iframe.mozRequestFullScreen();
+            } else if (iframe.webkitRequestFullscreen) {
+                iframe.webkitRequestFullscreen();
+            } else if (iframe.msRequestFullscreen) {
+                iframe.msRequestFullscreen();
+            }
+        });
+    </script>
+</body>
+</html> 
